@@ -1,0 +1,41 @@
+main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height:  100vh;
+
+	background: var(--grey-300);
+}
+
+.sidebarToggle{
+	cursor: pointer;
+
+	position: fixed;
+	top: 2rem;
+	left: 3rem;
+
+	font-size: 2rem;
+	color: var(--primary-500);
+
+	background: transparent;
+	border-color: transparent;
+
+	animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(1.2);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+
+

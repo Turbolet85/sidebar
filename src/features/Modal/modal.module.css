@@ -1,0 +1,54 @@
+.modalOverlay{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+
+	display: grid;
+	place-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	visibility: hidden;
+	opacity: 0;
+	background: rgb(0 0 0 / 50%);
+}
+
+.showModal{
+	z-index: 10;
+	visibility: visible;
+	opacity: 1;
+	transition: var(--transition);
+}
+
+.modalContainer{
+	position: relative;
+
+	display: grid;
+	align-items: center;
+
+	width: 90vh;
+	max-width: var(--fixed-width);
+	height: 30vh;
+
+	text-align: center;
+
+	background: white;
+	border-radius: var(--borderRadius);
+}
+
+.closeModalBtn{
+	cursor: pointer;
+
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+
+	font-size: 1.5rem;
+	color: #B93644;
+
+	background: transparent;
+	border: none;
+}
+
